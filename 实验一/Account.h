@@ -5,8 +5,8 @@ class Account
 {
     public:
         Account(); //构造函数
-        Account(int a,int b,double c) //有参构造函数
-        : id(a), balance(b), annualInterestRate(c){};
+        Account(int _id,int _balance,double _annualInterestRate) //有参构造函数
+        : id(_id), balance(_balance), annualInterestRate(_annualInterestRate){};
         double  getMonthlyInterestRate();
         void    withDraw(double money);
         void    deposit(double money);
