@@ -7,18 +7,18 @@ Account::Account(){
 }
 
 int Account::getId(){
-    return this->id;
+    return id;
 }
 
 double Account::getBalance(){
-    return this->balance;
+    return balance;
 }
 
 double Account::getAnnualInterestRate(){
-    return this->annualInterestRate;
+    return annualInterestRate;
 }
 double Account::getMonthlyInterestRate(){
-    return this->annualInterestRate / 12;
+    return annualInterestRate / 12;
 }
 void Account::setId(int id){
     this->id = id;
