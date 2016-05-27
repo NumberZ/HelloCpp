@@ -3,6 +3,7 @@
 class MyPoint{
     public:
         MyPoint();
+        virtual ~MyPoint() = default;
         MyPoint(double _x,double _y)
         : x(_x), y(_y){};
         
@@ -12,8 +13,8 @@ class MyPoint{
         double getX();
         double getY();
         
-        double distance(MyPoint);
-    private:
+        virtual double distance(MyPoint);
+    protected:
         double x;
         double y;
 };
