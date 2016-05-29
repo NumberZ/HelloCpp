@@ -6,7 +6,7 @@ class Loan{
         Loan();
         Loan(double _annualInterestRate,int _numbersOfYears,double _loanAmount)
         :annualInterestRate(_annualInterestRate),numbersOfYears(_numbersOfYears),loanAmount(_loanAmount){};
-        virtual ~Loan() =default;
+        virtual ~Loan() = default;
         double getAnnualInterestRate();
         int getNumbersOfYears();
         double getLoanAmount();
