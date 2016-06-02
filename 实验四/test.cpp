@@ -38,6 +38,6 @@ int main(){
         lastLoan = newLoan.getLoanAmount();
     }
     binaryio.close();
-    std::cout << allLoan - lastLoan << std::endl;
+    std::cout << "贷款总额:" <<allLoan - lastLoan << std::endl;
     return 0;
 }
