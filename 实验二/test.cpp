@@ -8,10 +8,10 @@
 using namespace std;
 int main(){
     MyPoint a;
-    MyPoint b(10,30.5); 
+    MyPoint b(10,30.5);
     ThreePoint c;
     ThreePoint d(10,30,25.5);
-    cout<<a.distance(b)<<endl;
-    cout<<c.distance(d)<<endl;
+    cout<<"a,b两点间的距离："<< a.distance(b)<<endl;
+    cout<<"c,d两点间的距离："<<c.distance(d)<<endl;
     return 0;
 }

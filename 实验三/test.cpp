@@ -1,7 +1,7 @@
 #include <iostream>
 #include "StackOfIntegers.h"
 #include "StackOfIntegers.cpp"
-
+using namespace std;
 
 /**
  * [isSuShu 判断是否为素数]
@@ -18,7 +18,9 @@ bool isSuShu(int n){
     return flag;
 }
 int main(){
-    int value = 120,i;
+    int value,i;
+    cout<<"请输入一个数：";
+    cin>>value;
     StackOfIntegers s;
     while (value!=1) {
         for(i =2 ;i<=value; i++){

@@ -5,9 +5,9 @@
 #include "Account.cpp"
 using namespace std;
 int main(){
-    time_t nowtime;  
-    nowtime = time(NULL); //获取日历时间  
-   
+    time_t nowtime;
+    nowtime = time(NULL); //获取日历时间
+
    //实例化Account
     Account account(1122,20000,0.045);
     account.withDraw(2500);
