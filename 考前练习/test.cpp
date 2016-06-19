@@ -1,17 +1,7 @@
-#include <iostream>
+#include<iostream> 
 using namespace std;
-class Test {
-    public:
-        Test(){}
-        Test(const Test& t){cout<<1;}
-};
- Test fun(Test &u){
-     Test t = u;
-     return t;
- }
-
- int main(){
-     Test x,y;
-     x=fun(y);
-     return 0;
- }
+int main(){
+int arr[2][2]={{9,8},{7,6}};
+int *p=arr[0] + 1; cout<<*p<<endl;
+return 0; 
+}
