@@ -1,15 +1,13 @@
 #include <iostream>
-#include "Circle.h"
-#include "Circle.cpp"
+using namespace std; class A{
+public:
+A(int i=0):r1(i){}
+void print(){cout<<'E'<<r1<<'-';}
+void print() const {cout<<'C'<<r1*r1<<'-';} void print(int x){cout<<'p'<<r1*r1*r1<<'-';}
+private:
+int r1;
+};
 int main(){
-    Circle  c1(10);
-    Circle  c2(20);
-    bool flag = c1 < c2;
-    if(flag == 1){
-        std::cout << "c1 比 c2 的半径小"<< std::endl;
-    }else {
-        std::cout <<"c1 不比 c2 的半径小" << std::endl;
-    }
-
-    return 0;
+A a1;
+const A a2(4); a1.print(2); a2.print(); return 0;
 }
